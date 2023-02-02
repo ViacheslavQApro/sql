@@ -17,4 +17,4 @@
 ## SELECT fname, lname, patronus FROM characters 
 ##	    WHERE NOT patronus = 'Unknown' OR patronus IS NOT NULL;
  
-[![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-1.png)]
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-1.png)
