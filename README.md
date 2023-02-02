@@ -52,51 +52,75 @@
 ## SELECT * FROM characters 
 ## WHERE faculty = 'Gryffindor' AND age >30; 
 
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-7.png)
+
 ## 8.	Выведите имена первых трех факультетов из таблицы, так чтобы факультеты не повторялись
 ## SELECT DISTINCT faculty FROM characters
 ## LIMIT 3;
 
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-8.png)
+
 ## 9.	 Выведите имена всех персонажей, у которых имя начинается с ‘H’ и состоит из 5 букв, или чье имя начинается с ‘L’ 
 ## SELECT fname FROM characters 
-## WHERE fname LIKE 'H____' OR fname LIKE 'L%';
+## WHERE fname LIKE 'H____' OR fname LIKE 'L%'; 
+
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-9.png)
 
 ## 10.	Посчитайте средний возраст всех персонажей 
-## SELECT AVG(age) FROM characters;
+## SELECT AVG(age) FROM characters; 
+
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-10.png)
 
 ## 11.	 Удалите персонажа с ID = 11 
 ## DELETE FROM characters 
-## WHERE char_id = 11;
+## WHERE char_id = 11; 
+
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-11.png)
 
 ## 12.	Выведите фамилию всех персонажей, которые содержат в ней букву ‘a’ 
 ## SELECT lname FROM characters 
-## WHERE lname LIKE '%a%';
+## WHERE lname LIKE '%a%'; 
+
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-12.png)
 
 ## 13.	Используйте псевдоним для того, чтобы временно замените название столбца fname на Half-Blood Prince для реального принца-полукровки 
 ## SELECT fname as Half_Blood_Prince FROM characters 
 ## WHERE fname = 'Severus'; 
 
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-13.png)
+
 
 ## 14.	Выведите id и имена всех патронусов в алфавитном порядки, при условии, что они есть или известны
 ## SELECT char_id, patronus FROM characters
 ## WHERE NOT patronus = 'Unknown' AND patronus IS NOT NULL
-## ORDER BY patronus ASC;
+## ORDER BY patronus ASC; 
+
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-14.png)
 
 ## 15.	Используя оператор IN, выведите имя и фамилию тех персонажей, у которых фамилия Crabbe, Granger или Diggory 
 ## SELECT fname, lname FROM characters 
-## WHERE lname IN ("Crabbe", "Granger", "Diggory");
+## WHERE lname IN ("Crabbe", "Granger", "Diggory"); 
+
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-15.png)
 
 ## 16.	Выведите минимальный возраст персонажа 
-## SELECT MIN(age) FROM characters;
+## SELECT MIN(age) FROM characters; 
+
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-16.png)
 
 ## 17.	Используя оператор UNION выберите имена из таблицы characters и названия книг из таблицы library
 ## SELECT fname FROM characters 
 ## UNION
-## SELECT book_name FROM library;
+## SELECT book_name FROM library; 
+
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-17.png)
 
 ## 18.	Используя оператор HAVING посчитайте количество персонажей на каждом факультете, оставив только те факультеты, где количество студентов больше 1 
 ## SELECT faculty, COUNT(faculty) FROM characters 
 ## GROUP BY faculty
-## HAVING COUNT(faculty) > 1;
+## HAVING COUNT(faculty) > 1; 
+
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-18.png)
 
 ## 19.	Используя оператор CASE опишите следующую логику:
 ## Выведите имя и фамилию персонажа, а также следующий текстовое сообщение:
@@ -115,8 +139,15 @@
 ## WHEN faculty = "Hufflepuff" THEN "Helga" 
 ## ELSE "Muggle"
 ## END AS "Founders"
-## FROM characters;
+## FROM characters; 
+
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-19.png)
 
 ## 20. Используя регулярное выражение найдите фамилии персонажей, которые не начинаются с букв H, L или S и выведите их 
 ## SELECT lname FROM characters 
-## WHERE NOT lname REGEXP '^[HLS]';
+## WHERE NOT lname REGEXP '^[HLS]'; 
+
+![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-20.png)
+
+
+
