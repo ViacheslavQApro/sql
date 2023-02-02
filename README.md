@@ -16,5 +16,5 @@
 ## 1.	Выведите имя, фамилию, патронуса всех персонажей, у которых есть patronus или он известен:
 ## SELECT fname, lname, patronus FROM characters 
 ##	    WHERE NOT patronus = 'Unknown' OR patronus IS NOT NULL;
-(https://github.com/ViacheslavQApro/sql/blob/master/images/1-1.png) 
-
+ 
+[![Header](https://github.com/ViacheslavQApro/sql/blob/master/images/1-1.png)]
